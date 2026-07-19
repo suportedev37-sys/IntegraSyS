@@ -463,7 +463,7 @@ class Analisador {
                   ))}
                 </div>
 
-                <a href="https://vercel.com/eliel-m-s/eliza-abc" target="_blank">
+                <a href="https://eliza-abc.vercel.app" target="_blank">
                   <Button className="w-full bg-pink-600 hover:bg-pink-700 dark:bg-pink-500 dark:hover:bg-pink-600 text-white group-hover:bg-pink-700 dark:group-hover:bg-pink-600 transition-colors duration-200">
                     Acessar Eliza ABC
                     <ExternalLink className="ml-2 h-4 w-4" />
