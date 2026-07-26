@@ -677,7 +677,7 @@ class Analisador {
               </div>
             </a>
 
-            <a href="https://www.youtube.com/@Macro_Tend%C3%AAncia" target="_blank" className="flex items-center space-x-4 group justify-center">
+            {/* <a href="https://www.youtube.com/@Macro_Tend%C3%AAncia" target="_blank" className="flex items-center space-x-4 group justify-center">
               <div className="bg-red-600 p-3 rounded-xl group-hover:scale-110 transition-transform">
                 <Video className="h-6 w-6 text-white" />
               </div>
@@ -689,7 +689,7 @@ class Analisador {
                   @Macro_Tendência
                 </p>
               </div>
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
