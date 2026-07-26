@@ -24,6 +24,7 @@ import {
   LineChart,
   GraduationCap,
   CheckSquare,
+  Package,
   Send,
   Video,
 } from "lucide-react";
@@ -534,6 +535,70 @@ class Analisador {
                 </a>
               </CardContent>
             </Card>
+
+            {/* AeroStock */}
+            <Card className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
+              <CardContent className="p-8">
+                <div className="flex items-center space-x-3 mb-4">
+                  <Package className="h-8 w-8 text-emerald-600 dark:text-emerald-400" />
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                      AeroStock
+                    </h3>
+                    <Badge className="bg-emerald-100 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200 hover:bg-emerald-100 dark:hover:bg-emerald-900">
+                      Estoque
+                    </Badge>
+                  </div>
+                </div>
+
+                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                  Sistema de controle de estoque aéreo com rastreamento de
+                  paletes, gerenciamento de posições e controle de validade
+                  com alertas inteligentes.
+                </p>
+
+                <div className="space-y-3 mb-6">
+                  {[
+                    "Cadastro e rastreamento de paletes por código único",
+                    "Mapeamento visual de corredores, colunas e níveis",
+                    "Controle de validade com alertas inteligentes",
+                    "QR Code por palete para consulta rápida",
+                  ].map((feature, index) => (
+                    <div key={index} className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-emerald-600 dark:bg-emerald-400 rounded-full"></div>
+                      <span className="text-gray-700 dark:text-gray-300 text-sm">
+                        {feature}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {[
+                    "Next.js",
+                    "Prisma",
+                    "Turso",
+                    "Tailwind CSS",
+                    "TypeScript",
+                  ].map((tech) => (
+                    <Badge
+                      key={tech}
+                      variant="secondary"
+                      className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300"
+                    >
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+
+                <a href="https://aero-stock-pi.vercel.app" target="_blank">
+                  <Button className="w-full bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white group-hover:bg-emerald-700 dark:group-hover:bg-emerald-600 transition-colors duration-200">
+                    Acessar AeroStock
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -707,6 +772,7 @@ class Analisador {
               <span className="text-gray-400">Macro Tendência</span>
               <span className="text-gray-400">DomínioERP</span>
               <span className="text-gray-400">GammaFlow</span>
+              <span className="text-gray-400">AeroStock</span>
               <span className="text-gray-400">Eliza ABC</span>
             </div>
           </div>
